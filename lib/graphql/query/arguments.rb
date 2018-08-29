@@ -82,6 +82,7 @@ module GraphQL
           h
         end
       end
+      alias_method :to_hash, :to_h
 
       def_delegators :to_h, :keys, :values, :each, :any?
 
